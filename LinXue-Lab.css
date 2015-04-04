@@ -185,8 +185,14 @@ h4{
 /*day02*/
 #bunny {
 	position: fixed;
-	top: 50px;
-        bottom: 50px;
+	top: 0px;
+        bottom: 0px;
+	z-index:2;
+}
+#trampoline{
+    position: fixed;
+    bottom: -50px;
+    z-index:1;
 }
 /*day03*/
 #day03_button{
@@ -210,7 +216,13 @@ h4{
     height:300px;
 }
 
-svg:hover path{
-    fill: blue;
+.svg:hover path{
+    stroke: blue;
+}
+.svg:hover ellipse{
+    fill: green;
+}
+.svg:hover circle{
+    fill: orange;
 }
 

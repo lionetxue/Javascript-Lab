@@ -12,7 +12,9 @@ function getRandomColor () {
     }
     $("drawingpad").style.backgroundColor = color;
 }
- 
+
+
+jQuery(document).ready(function() { 
 /* Replace all SVG images with inline SVG */
     /*
      * Replace all SVG images with inline SVG
@@ -42,6 +44,8 @@ function getRandomColor () {
                 // Replace image with new SVG
                 $img.replaceWith($svg);
 
-            }, 'xml');
+            });
 
         });
+        
+});
