@@ -2,7 +2,7 @@
 jQuery(document).ready(function() {
     /*Get value X or O based on which one the user clicked*/
     $('#cross').click( function(){
-        choice = "x";
+        choice = "X";
     });
 
     $('#circle').click(function(){
