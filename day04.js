@@ -1,17 +1,23 @@
 
 jQuery(document).ready(function() {
     /*Get value X or O based on which one the user clicked*/
-    $('#cross').click( function(){
-        choice = "X";
-    });
-
-    $('#circle').click(function(){
-        choice = "O";
+    var choice = "";
+    $('.choice').click( function(){
+        if ($(this).text() == choice) {
+            $("#message").text("It is not your turn!");
+        } else{
+        choice = $(this).text();
+        $("#message").text("");
+        }
     });
     /*Assign X or O to each grid that the user clicked*/
 
     $('.box').click(function () {
-        $(this).text(choice);
+        if ($("#message").text()=="It is not your turn!") {
+            $(this).text("");
+        } else{
+            $(this).text(choice);
+        }
         /*call the function to check winner after each click*/
         checkWinner();
     });
