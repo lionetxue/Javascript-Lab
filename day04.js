@@ -21,8 +21,12 @@ jQuery(document).ready(function() {
         /*call the function to check winner after each click*/
         /*pass local variable "choice" to function checkWinner */
         checkWinner(choice);
-        /*Prohibit continuous clicking*/
-        choice = "";
+        /*Automatically switch to the other player */
+        if (choice == "X") {
+            choice = "O";
+        } else{
+            choice = "X";
+        }
     });
     
     /*reset button, window reload */
