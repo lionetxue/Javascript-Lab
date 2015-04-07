@@ -1,25 +1,28 @@
 
 jQuery(document).ready(function() {
+    
+    var choice;
+    var lastPlayer;
     /*Get value X or O based on which one the user clicked*/
-    var choice = "";
     $('.choice').click( function(){
-        if ($(this).text() == choice) {
-            $("#message").text("It is not your turn!");
-        } else{
+        if ($(this).text() == lastPlayer) {
+            $("#message").text("It's not your turn!");
+        } else {
         choice = $(this).text();
+        lastPlayer = choice;
         $("#message").text("");
         }
     });
+
     /*Assign X or O to each grid that the user clicked*/
 
     $('.box').click(function () {
-        if ($("#message").text()=="It is not your turn!") {
-            $(this).text("");
-        } else{
-            $(this).text(choice);
-        }
+        $(this).text(choice);
         /*call the function to check winner after each click*/
-        checkWinner();
+        /*pass local variable "choice" to function checkWinner */
+        checkWinner(choice);
+        /*Prohibit continuous clicking*/
+        choice = "";
     });
     
     /*reset button, window reload */
@@ -30,7 +33,10 @@ jQuery(document).ready(function() {
 });
 
     /*Announce the winner*/
-function checkWinner() {
+function checkWinner(choice) {
+    if (choice == "") {
+        $("#message").text("Please choose a player.");
+    }else{
     // first row
     if ($("#box_1").text() == choice && $("#box_2").text() == choice && $("#box_3").text()== choice ) {
         $("#message").text(choice +" WINS! Congratulations");
@@ -87,7 +93,7 @@ function checkWinner() {
         $("#box_5").css("background-color","#4faf45");
         $("#box_3").css("background-color","#4faf45");  
     }
-    
+    }
 }
     
 
