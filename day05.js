@@ -1,6 +1,14 @@
 $(document).ready(function () {
-	//creat the shape palette on the left 
+	//create the shape palette on the left 
 	makeShapes();
+	
+/*	// Create a clone of the shape on mousedown
+	$('.block').mouseover (function () {
+		var myLink = $(this).attr('src');
+		myLink = myLink.replace("images/", "");
+		myLink = myLink.replace(".svg", "");
+		makeShape(myLink);
+	});  */
 	//drag html elements using Jquery UI 
 	$('.block').draggable({
 		containment: 'window',
@@ -17,9 +25,9 @@ $(document).ready(function () {
 	});
 	
 	// instruction dispears on mousedown
-	$('#toybox').on('mousedown', function () {
+	$('#toybox').mousedown (function () {
 		$('#instruction').fadeOut('slow');
-	})
+	});
 
 	function makeShapes() {
 		var shapes = ['tri', 'triequi',
@@ -30,10 +38,12 @@ $(document).ready(function () {
 			makeShape(shape);
 		}
 	};
-	// create 10 copies of each shape
+	
+	//Make 20 copies of each shape
 	function makeShape(shape) {
-		for (var i = 0; i < 20; i++){
-			$('#toybox').append('<img class="block ' + shape + '"src ="' + shape + '.svg"/>');
-		}		
+		for (i=0; i<20; i++) {
+			$('#toybox').append('<img class="block ' + shape + '"src ="images/' + shape + '.svg"/>');
+		
+		}	
 	}; 
 });

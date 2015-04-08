@@ -1,0 +1,30 @@
+/*day01*/
+.info{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    font-weight: 300;
+    color: gray;
+    font-family: "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+}
+.viewport-img {
+    width:768px;
+}
+#top {
+    display: block;
+    position:fixed;
+    top: 320px;
+    height: 768px;
+    width:768px;
+    background-image:url("images/grand-opening.jpg");
+    background-size: cover;
+    z-index: 1;
+    text-align: center;
+    }
+#bottom {
+    height:2000px;
+    position: absolute;
+    top: 1000px;
+    z-index: 2;
+}

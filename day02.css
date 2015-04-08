@@ -1,0 +1,12 @@
+/*day02*/
+#bunny {
+	position: fixed;
+	top: 0px;
+        bottom: 0px;
+	z-index:2;
+}
+#trampoline{
+    position: fixed;
+    bottom: -50px;
+    z-index:1;
+}
