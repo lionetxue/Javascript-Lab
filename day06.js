@@ -1,16 +1,16 @@
-(function($){
+ (function($){
     $.fn.disableSelection = function() {
         return this
                  .attr('unselectable', 'on')
                  .css('user-select', 'none')
                  .on('selectstart', false);
     };
-})(jQuery);
+})(jQuery); 
 
 $(document).ready(function () {
 	var canvas = $('canvas')[0],
 	    ctx = canvas.getContext('2d'),
-	    h = window.innerHeight - 150,
+	    h = window.innerHeight-150,
 	    w = window.innerWidth,
 	    flakes = [],
 	    snow_depth = h - 5;
@@ -83,10 +83,9 @@ $(document).ready(function () {
 				'cursor': 'auto'
 			});
 		}
-			
 	};
 
-	$('body').disableSelection();
+	$('body').disableSelection(); 
 	
 });
 

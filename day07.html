@@ -5,35 +5,44 @@
     <meta charset="utf-8">
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">    
     <link href="LinXue-Lab.css" type="text/css" rel="stylesheet" />
-    <link href="day06.css" type="text/css" rel="stylesheet" />
+    <link href="day07.css" type="text/css" rel="stylesheet" />
     <link rel="shortcut icon" href="images/NameLogo-red.ico">
     <title>Lin Xue - Designer</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="underscore.js" type="text/javascript"></script>
-    <script src="google-analytics.js" type="text/javascript"></script>
-    <script src="day06.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+    <script src="day07.js" type="text/javascript"></script>
 </head>
 
 <body>
 <header>
     <div class="container">
         <a href="http://linxuedesign.com"><img id="logo" src="images/NameLogo-red.png"/></a> 
-        <div class="title">Day 06: Let It Snow!</div>
+        <div class="title">Day 07: Organize the tools</div>
         <nav class="mainnav">
             <ul>
                 <li><a id="nav-lab" href="lab-index.html"> LAB </a></li>
-                <li><a id="nav-next" href="day07.html"> Next </a></li>
+                <li><a id="nav-next" href="day08.html"> Next </a></li>
             </ul>
         </nav>
     </div>
 </header>
 <div class="page-padding"></div>
 <div class="container">
-    <button id="snowbutton">Let it snow!</button>
+    <h2>Drag and drop</h2>
+    <p>Drag the tools into their slots.</p>
 </div>
-<div>
-    <img id="house" src="images/snow-village.svg"></img> 
-    <canvas></canvas>
+    
+<div id="content">
+  <div id="tools">
+    
+  </div>
+  
+  <div id="bin"> </div>
+ 
+  <div id="successMessage">
+    <h2>You did it!</h2>
+    <button id="reset" type="button">Play Again</button>
+  </div>
 </div>
 
 </body>

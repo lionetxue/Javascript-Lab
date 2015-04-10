@@ -1,0 +1,100 @@
+#content {
+  margin: 80px 70px;
+  text-align: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Slots for final card positions */
+
+#bin {
+  margin: 50px auto 0 auto;
+  background: orange;
+}
+
+/* The initial pile of unsorted cards */
+
+#tools{
+  margin: 0 auto;
+  background: #ffd;
+}
+
+#bin, #tools{
+  width: 555px;
+  height: 120px;
+  padding: 20px;
+  border: 2px solid #333;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+}
+
+/* Individual tools and slots */
+
+#bin div, #tools div {
+  float: left;
+  width: 78px;
+  height: 78px;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 2px solid #333;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  margin: 0 0 0 10px;
+  background: #fff;
+}
+#tools div img {
+    height:100%;
+}
+#bin div:first-child, #tools div:first-child {
+  margin-left: 0;
+}
+
+#bin div.hovered {
+  background: #aaa;
+}
+
+#bin div {
+  border-style: dashed;
+}
+
+#tools div.ui-draggable-dragging {
+  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+}
+
+/* Individually coloured cards */
+
+#tool1.correct { background: pink; }
+#tool2.correct { background: blue; }
+#tool3.correct { background: yellow; }
+#tool4.correct { background: purple; }
+#tool5.correct { background: green; }
+
+
+
+/* "You did it!" message */
+#successMessage {
+  position: absolute;
+  left: 580px;
+  top: 250px;
+  width: 0;
+  height: 0;
+  z-index: 100;
+  background: #dfd;
+  border: 2px solid #333;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+  box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+  padding: 20px;
+}
