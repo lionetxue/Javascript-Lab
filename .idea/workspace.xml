@@ -2,15 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fb06e81-5ab5-4bc5-97ab-14e33d939b2c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lin-Lab.iml" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/images/snow-village.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/largesquare.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/color/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/color/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/color/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/color/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/color/node_modules/color-convert/Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/color/node_modules/color-convert/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/color/node_modules/color-convert/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/color/node_modules/color-convert/browser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/color/node_modules/color-convert/component.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/color/node_modules/color-convert/conversions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/color/node_modules/color-convert/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/color/node_modules/color-convert/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/color/node_modules/color-convert/t.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/color/node_modules/color-convert/test.diff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/color/node_modules/color-convert/test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/color/node_modules/color-convert/test/basic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/color/node_modules/color-convert/test/speed.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/color/node_modules/color-string/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/color/node_modules/color-string/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/color/node_modules/color-string/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/color/node_modules/color-string/color-string.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/color/node_modules/color-string/node_modules/color-name/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/color/node_modules/color-string/node_modules/color-name/UNLICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/color/node_modules/color-string/node_modules/color-name/index.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/color/node_modules/color-string/node_modules/color-name/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/color/node_modules/color-string/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/color/node_modules/color-string/test/basic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/color/package.json" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/square.svg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/tri.svg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/triequi.svg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/trilarge.svg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lab-index.html" afterPath="$PROJECT_DIR$/lab-index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/underscore.js" afterPath="$PROJECT_DIR$/underscore.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Lin-Lab.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -414,12 +440,12 @@
       <created>1429055776682</created>
       <option name="number" value="Default" />
       <updated>1429055776682</updated>
-      <workItem from="1429055778050" duration="5712000" />
+      <workItem from="1429055778050" duration="6221000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5712000" />
+    <option name="totallyTimeSpent" value="6221000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="962" height="1163" extended-state="0" />
