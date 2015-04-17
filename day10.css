@@ -1,0 +1,105 @@
+
+body{
+	background-color: black;
+	color: white;
+}
+.panel, .text {
+	background: #000;
+	overflow:hidden;
+	position: relative;
+}
+
+.caption {
+	font-size: 19px;
+	font-weight: 500;
+	width: 500px;
+	position: absolute;
+	-moz-user-select: -moz-none;
+	-webkit-user-select: none;
+	user-select: none;
+	cursor: default;
+	z-index: 997;
+}
+
+h1{
+	color: white;
+}
+
+h3{
+	text-align: center;
+}
+/* =============================================================================
+   Panels
+   ========================================================================== */
+
+#title {
+	background: none;
+}
+
+#title .b {
+	background: url("images/Christmas-eve.png") center no-repeat;
+	width: 100%;
+	position: absolute;
+	z-index: 100;
+}
+
+#Xmas-eve {
+	background: url('images/background-village.png') 50% 0 no-repeat fixed;
+	background-color: white;
+}
+
+#Xmas-eve .b {
+	background: url('images/snowflakes.png') 50% 0 repeat-x fixed;
+	width: 100%;
+	position: absolute;
+	z-index: 100;
+}
+
+#Xmas-eve .c {
+	background: url('images/shooting-star.png') 50% 0 no-repeat fixed;
+	width: 100%;
+	position: absolute;
+	z-index: 101;
+}
+
+#Xmas-eve .d {
+	background: url('images/Santa-sled.png') 50% 0 no-repeat fixed;
+	width: 100%;
+	position: absolute;
+	z-index: 102;
+}
+
+#Xmas-eve .caption {
+	width: 340px;
+	margin: 358px 0 0 555px;
+}
+
+#waiting {																/* 11 Josh Cochran */
+	background: url('images/Santa-gone.svg') center no-repeat;
+	background-color: black;
+}
+
+#waiting .b {
+	background: url('images/children-inline.svg') 50% 0 no-repeat;
+	width: 100%;
+	position: absolute;
+	z-index: 101;
+	transition: background-position-x 2s;
+	-moz-transition: background-position 2s; /* Firefox 4 */
+	-webkit-transition: background-position-x 2s; /* Safari and Chrome */
+	-o-transition: background-position-x 2s; /* Opera */
+}
+
+#waiting .caption {
+	width: 800px;
+	margin: 300px 0px 0 230px;
+}
+
+#waiting .wait {
+	padding-left:148px;
+	opacity: 0;
+	transition: opacity 1s;
+	-moz-transition: opacity 1s; /* Firefox 4 */
+	-webkit-transition: opacity 1s; /* Safari and Chrome */
+	-o-transition: opacity 1s; /* Opera */
+}
