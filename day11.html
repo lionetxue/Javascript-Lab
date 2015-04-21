@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <link href="LinXue-Lab.css" type="text/css" rel="stylesheet" />
+    <link href="day11.css" type="text/css" rel="stylesheet" />
+    <link rel="shortcut icon" href="images/NameLogo-red.ico">
+    <title>Lin Xue - Designer</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="day11.js"></script>
+
+</head>
+
+<body>
+<header>
+    <div class="container">
+        <a href="http://linxuedesign.com"><img id="logo" src="images/NameLogo-red.png"/></a>
+        <div class="title">Day 11: Pet Kitty</div>
+        <nav class="mainnav">
+            <ul>
+                <li><a id="nav-lab" href="lab-index.html"> LAB </a></li>
+                <li><a id="nav-next" href="day12.html"> Next </a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="page-padding"></div>
+<div class="container">
+    <div id="module">
+        <h1>You killed the kitty!</h1>
+        <a href="day11.html">Try Again?</a>
+    </div>
+
+    <div id="stats_container">
+        <div class="stat" id="health">Health </div>
+        <div class="progressBar healthBar" data-value="60"><div></div></div>
+        <div class="stat" id="love">Love</div>
+        <div class="progressBar loveBar" data-value="60"><div></div></div>
+        <div class="stat" id="happiness">Happiness</div>
+        <div class="progressBar happinessBar" data-value="60"><div></div></div>
+    </div>
+
+    <div id="text_bubble">
+        <p>Meow!</p>
+    </div>
+
+    <div id="kitty_container">
+        <div class="ear" id="left_ear"></div>
+        <div class="ear" id="right_ear"></div>
+        <div id="face">
+            <div id="eyes_container">
+                <div class="eyeball" id="eye_left"></div>
+                <div class="eyeball" id="eye_right"></div>
+            </div>
+            <div class="mouth smile"></div>
+            <div class="nose"></div>
+            <div class="whiskers" id="left_whiskers">
+                <div class="whisker w1"></div>
+                <div class="whisker w2"></div>
+                <div class="whisker w3"></div>
+            </div>
+            <div class="whiskers" id="right_whiskers">
+                <div class="whisker w1"></div>
+                <div class="whisker w2"></div>
+                <div class="whisker w3"></div>
+            </div>
+        </div>
+
+        <div class="head"></div>
+
+        <div class="paw" id="left_paw"></div>
+        <div class="paw" id="right_paw"></div>
+        <div class="body"></div>
+        <div class="tail"></div>
+
+    </div>
+
+    <div id="btn_container">
+        <button type="button" id="btn_feed">Feed The Kitty</button>
+        <button type="button" id="btn_pet">Pet The Kitty</button>
+        <button type="button" id="btn_play">Play With The Kitty</button>
+    </div>
+</div>
+
+</body>
+</html>

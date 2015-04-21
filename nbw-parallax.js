@@ -32,6 +32,7 @@ if (screen.width > 1024) {
         var $BG4a 	= $('#keep-scroll');					//text
         var $BG5a 	= $('#waiting');
         var $BG5b	= $('#waiting').find('.b');		//
+        var $BG5c 	= $('#waiting').find('.frame');	//frame
         var $BG6a 	= $('#the-end');					//text
 
         // other variables

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>progressbar demo</title>
+    <link href="test-progressbar.css" type="text/css" rel="stylesheet" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+<body>
+<div id="stats_container">
+    <div class="progressBar" data-value="22"><div></div></div>
+    <div class="progressBar" data-value="92"><div></div></div>
+</div>
+
+<script type="text/javascript">
+    function progress(percent, element) {
+        var progressBarWidth = percent * element.width() / 100;
+        // With labels:
+        element.find('div').animate({ width: progressBarWidth }, 500).html(percent + "%&nbsp;");
+
+        // Without labels:
+        //element.find('div').animate({ width: progressBarWidth }, 500);
+    }
+
+    $(document).ready(function() {
+        $('.progressBar').each(function() {
+            //alert('Hello');
+            var bar = $(this);
+            var max = bar.attr('data-value');
+
+            progress(max, bar);
+        });
+    });
+</script>
+</body>
+</html>

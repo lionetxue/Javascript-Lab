@@ -1,0 +1,536 @@
+
+#module {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #121212;
+    text-align: center;
+    z-index: 100;
+}
+
+h1 {
+    color: #d6003d;
+    font-size: 40px;
+    margin: 200px 0 50px;
+}
+
+
+#stats_container {
+    padding-top: 20px;
+}
+
+.stat {
+    display: block;
+    padding: 5px;
+}
+
+.progressBar {
+    width: 400px;
+    height: 22px;
+    border: 1px solid #111;
+    background-color: #292929;
+}
+.progressBar div {
+    height: 100%;
+    color: #fff;
+    text-align: right;
+    line-height: 22px; /* same as #progressBar height if we want text middle aligned */
+    width: 0;
+
+}
+.healthBar div{
+    background-color: green;
+}
+.loveBar div{
+    background-color: deeppink;
+}
+.happinessBar div{
+    background-color: #0099ff;
+}
+
+#text_bubble {
+    position: absolute;
+    right: 0;
+    width: 200px;
+    height: 150px;
+    background: skyblue;
+    border-radius: 50%;
+    text-align: center;
+}
+#text_bubble:before {
+    content:"";
+    position: absolute;
+    right: 178px;
+    top: 128px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: skyblue;
+}
+#text_bubble:after{
+    content:"";
+    position: absolute;
+    right: 210px;
+    top: 160px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: skyblue;
+}
+
+#text_bubble p {
+    padding-top: 30px;
+    font-size: 36px;
+}
+
+.purr {
+    -webkit-animation: purr 1s 2;
+    -moz-animation: purr 1s 2;
+    -ms-animation: purr 1s 2;
+    -o-animation: purr 1s 2;
+    -animation: purr 1s 2;
+}
+
+
+#kitty_container {
+    position: relative;
+    height: 600px;
+    width: 500px;
+    margin: auto;
+}
+
+.ear {
+    display: block;
+    border-bottom: 60px solid transparent;
+    border-left: 60px solid #1a1a1a;
+    overflow: hidden;
+    position: absolute;
+    z-index:-1;
+}
+#left_ear {
+    top: 160px;
+    left: 160px;
+    transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+}
+#right_ear {
+    top: 160px;
+    right: 150px;
+    transform: rotate(95deg);
+    -ms-transform: rotate(95deg);
+    -webkit-transform: rotate(95deg);
+
+    -webkit-animation: twitch 8s infinite ;
+    -moz-animation: twitch 8s infinite ;
+    -ms-animation: twitch 8s infinite ;
+    -o-animation: twitch 8s infinite ;
+    -animation: twitch 8s infinite ;
+}
+
+#face {
+    position: absolute;
+    top: 200px;
+    left: 175px;
+    width: 150px;
+    height: 80px;
+}
+
+#eyes_container {
+    text-align: center;
+}
+
+.eyeball {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0 8px;
+    border-radius: 50%;
+    border: 2px solid #1a1a1a;
+    border-right: 3px solid #1a1a1a;
+    border-left: 1px solid #1a1a1a;
+    background-color: #1a1a1a;
+
+    transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    -webkit-transform: rotate(35deg);
+}
+
+.nose {
+    position: absolute;
+    top: 40px;
+    left: 70px;
+    height: 8px;
+    width: 12px;
+    background-color: #e8a29c;
+    border-radius: 50%;
+    z-index: 3;
+}
+.whiskers {
+    position: absolute;
+    z-index: 2;
+}
+
+#left_whiskers {
+    left: -20px;
+}
+#right_whiskers {
+    right: -20px;
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+
+.whisker {
+    height: 2px;
+    width: 70px;
+    margin: 10px;
+    background-color: #202123;
+}
+
+.w1 {
+    transform: rotate(12deg);
+    -ms-transform: rotate(12deg);
+    -webkit-transform: rotate(12deg);
+}
+
+.w3 {
+    transform: rotate(-12deg);
+    -ms-transform: rotate(-12deg);
+    -webkit-transform: rotate(-12deg);
+}
+
+.mouth {
+    position: absolute;
+}
+
+.smile {
+    bottom: 10px;
+    left: 50px;
+    height: 20px;
+    width: 50px;
+    border-bottom: 5px solid #1a1a1a;
+    border-radius: 50%;
+
+}
+
+.frown {
+    bottom: -50px;
+    left: 35px;
+    height: 70px;
+    width: 80px;
+    border-top: 5px solid #1a1a1a;
+    border-radius: 50%;
+
+    transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+}
+
+.joy {
+    bottom: 10px;
+    left: 35px;
+    height: 40px;
+    width: 80px;
+    border-bottom: 5px solid red;
+    border-radius: 50% ;
+
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+}
+
+.head {
+    position: absolute;
+    top: 150px;
+    left: 160px;
+    height: 150px;
+    width: 180px;
+    border-bottom: 4px solid #1a1a1a;
+    border-right: 5px solid #1a1a1a;
+    border-top: 3px solid #1a1a1a;
+    border-left: 3px solid #1a1a1a;
+    border-radius: 50%;
+    background-color: #FFFFFA;
+    z-index:-1;
+}
+
+.body {
+    position: absolute;
+    top: 300px;
+    left: 180px;
+    height: 180px;
+    width: 140px;
+    background-color: #FFFFFA;
+    border:4px solid #1a1a1a;
+    border-radius: 50% 50% 50% 50% / 70% 70% 40% 40%;
+    z-index: -10;
+}
+
+.paw {
+    position: absolute;
+    bottom: 120px;
+    height: 20px;
+    width: 30px;
+    background-color: #1a1a1a;
+    border-radius: 50% 50% 30% 30%;
+    z-index: 10;
+    cursor: pointer;
+}
+#left_paw {
+    left: 210px;
+}
+#right_paw {
+    right: 200px;
+}
+
+.paw_lick {
+    -webkit-animation: paw 1.5s;
+    -moz-animation: paw 1.5s;
+    -ms-animation: paw 1.5s;
+    -o-animation: paw 1.5s;
+    -animation: paw 1.5s;
+}
+
+.tail {
+    position: absolute;
+    bottom: 145px;
+    left: 100px;
+    width: 140px;
+    height: 110px;
+    background-color: transparent;
+    border:20px solid #1a1a1a;
+    border-width: 0 0 20px 25px ;
+    border-radius: 85px/70px;
+    -webkit-animation: tail_flick 11s infinite;
+    -moz-animation: tail_flick 11s infinite;
+    -ms-animation: tail_flick 11s infinite;
+    -o-animation: tail_flick 11s infinite;
+    -animation: tail_flick 11s infinite;
+    z-index:-20;
+}
+
+
+.hug {
+    -webkit-animation: hug .7s;
+    -moz-animation: hug .7s;
+    -ms-animation: hug .7s;
+    -o-animation: hug .7s;
+    animation: hug .7s;
+}
+
+.play {
+    -webkit-animation: play 1s;
+    -moz-animation: play 1s;
+    -ms-animation: play 1s;
+    -o-animation: play 1s;
+    animation: play 1s;
+}
+.feed {
+    -webkit-animation: feed 1s;
+    -moz-animation: feed 1s;
+    -ms-animation: feed 1s;
+    -o-animation: feed 1s;
+    animation: feed 1s;
+}
+
+
+
+@-webkit-keyframes pet {
+    0% {-webkit-transform: scaleY(1); }
+    50% {-webkit-transform: scaleY(1.3) scaleX(0.8); }
+    100% {-webkit-transform: scaleY(1); }
+}
+
+@-webkit-keyframes play {
+    0% {-webkit-transform: translateX(0);}
+    12% {-webkit-transform: translateY(-50px) rotate(-20deg);}
+    25% {-webkit-transform: translateX(0px);}
+    37% {-webkit-transform: translateY(-50px) rotate(20deg);}
+    50% {-webkit-transform: translateX(0px);}
+    62% {-webkit-transform: translateY(-50px) rotate(-20deg);}
+    75% {-webkit-transform: translateX(0px);}
+    87% {-webkit-transform: translateY(-50px) rotate(20deg);}
+    100% {-webkit-transform: translateX(0);}
+}
+
+@-webkit-keyframes feed {
+    0% {-webkit-transform: scaleY(1); }
+    10%, 30%, 50%, 70%, 90%  {-webkit-transform: scaleY(1.3) scaleX(0.8); }
+    20%, 40%, 60%, 80% {-webkit-transform: scaleY(1) scaleX(1); }
+    100% {-webkit-transform: scaleY(1); }
+}
+
+
+@-moz-keyframes feed {
+    0% {-moz-transform: scaleY(1); }
+    10%, 30%, 50%, 70%, 90%  {-moz-transform: scaleY(1.3) scaleX(0.8); }
+    20%, 40%, 60%, 80% {-moz-transform: scaleY(1) scaleX(1); }
+    100% {-moz-transform: scaleY(1); }
+}
+
+@-moz-keyframes pet {
+    0% {-moz-transform: scaleY(1); }
+    50% {-moz-transform: scaleY(1.3) scaleX(0.8); }
+    100% {-moz-transform: scaleY(1); }
+}
+
+@-moz-keyframes play {
+    0% {-moz-transform: translateX(0);}
+    12% {-moz-transform: translateY(-50px) rotate(-20deg);}
+    25% {-moz-transform: translateX(0px);}
+    37% {-moz-transform: translateY(-50px) rotate(20deg);}
+    50% {-moz-transform: translateX(0px);}
+    62% {-moz-transform: translateY(-50px) rotate(-20deg);}
+    75% {-moz-transform: translateX(0px);}
+    87% {-moz-transform: translateY(-50px) rotate(20deg);}
+    100% {-moz-transform: translateX(0);}
+}
+
+@-ms-keyframes feed {
+    0% {-ms-transform: scaleY(1); }
+    10%, 30%, 50%, 70%, 90%  {-ms-transform: scaleY(1.3) scaleX(0.8); }
+    20%, 40%, 60%, 80% {-ms-transform: scaleY(1) scaleX(1); }
+    100% {-ms-transform: scaleY(1); }
+}
+
+@-ms-keyframes pet {
+    0% {-ms-transform: scaleY(1); }
+    50% {-ms-transform: scaleY(1.3) scaleX(0.8); }
+    100% {-ms-transform: scaleY(1); }
+}
+
+@-ms-keyframes play {
+    0% {-ms-transform: translateX(0);}
+    12% {-ms-transform: translateY(-50px) rotate(-20deg);}
+    25% {-ms-transform: translateX(0px);}
+    37% {-ms-transform: translateY(-50px) rotate(20deg);}
+    50% {-ms-transform: translateX(0px);}
+    62% {-ms-transform: translateY(-50px) rotate(-20deg);}
+    75% {-ms-transform: translateX(0px);}
+    87% {-ms-transform: translateY(-50px) rotate(20deg);}
+    100% {-ms-transform: translateX(0);}
+}
+
+@-o-keyframes feed {
+    0% {-o-transform: scaleY(1); }
+    10%, 30%, 50%, 70%, 90%  {-o-transform: scaleY(1.3) scaleX(0.8); }
+    20%, 40%, 60%, 80% {-o-transform: scaleY(1) scaleX(1); }
+    100% {-o-transform: scaleY(1); }
+}
+
+@-o-keyframes pet {
+    0% {-o-transform: scaleY(1); }
+    50% {-o-transform: scaleY(1.3) scaleX(0.8); }
+    100% {-o-transform: scaleY(1); }
+}
+
+@-o-keyframes play {
+    0% {-o-transform: translateX(0);}
+    12% {-o-transform: translateY(-50px) rotate(-20deg);}
+    25% {-o-transform: translateX(0px);}
+    37% {-o-transform: translateY(-50px) rotate(20deg);}
+    50% {-o-transform: translateX(0px);}
+    62% {-o-transform: translateY(-50px) rotate(-20deg);}
+    75% {-o-transform: translateX(0px);}
+    87% {-o-transform: translateY(-50px) rotate(20deg);}
+    100% {-o-transform: translateX(0);}
+}
+
+@keyframes feed {
+    0% {transform: scaleY(1); }
+    10%, 30%, 50%, 70%, 90%  {transform: scaleY(1.3) scaleX(0.8); }
+    20%, 40%, 60%, 80% {transform: scaleY(1) scaleX(1); }
+    100% {transform: scaleY(1); }
+}
+
+@keyframes pet {
+    0% {transform: scaleY(1); }
+    50% {transform: scaleY(1.3) scaleX(0.8); }
+    100% {transform: scaleY(1); }
+}
+
+@keyframes play {
+    0% {transform: translateX(0);}
+    12% {transform: translateY(-50px) rotate(-20deg);}
+    25% {transform: translateX(0px);}
+    37% {transform: translateY(-50px) rotate(20deg);}
+    50% {transform: translateX(0px);}
+    62% {transform: translateY(-50px) rotate(-20deg);}
+    75% {transform: translateX(0px);}
+    87% {transform: translateY(-50px) rotate(20deg);}
+    100% {transform: translateX(0);}
+}
+
+/*ear twitch and tail flick*/
+@-webkit-keyframes twitch {
+    0% { -webkit-transform: rotate(95deg); }
+    9% { -webkit-transform: rotate(95deg); }
+    10%, 12%, 14% { -webkit-transform: rotate(98deg); }
+    11%, 13%, 15% { -webkit-transform: rotate(95deg); }
+    100% { -webkit-transform: rotate(95deg); }
+}
+@-webkit-keyframes tail_flick {
+    0% { -webkit-transform: rotate(0deg); }
+    79% { -webkit-transform: rotate(0deg); }
+    80%, 85%, 90% { -webkit-transform: rotate(-10deg); }
+    83%, 88%, 93% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(0deg); }
+}
+
+/* Moz */
+@-moz-keyframes twitch {
+    0% { -moz-transform: rotate(95deg); }
+    9% { -moz-transform: rotate(95deg); }
+    10%, 12%, 14% { -moz-transform: rotate(98deg); }
+    11%, 13%, 15% { -moz-transform: rotate(95deg); }
+    100% { -moz-transform: rotate(95deg); }
+}
+@-moz-keyframes tail_flick {
+    0% { -moz-transform: rotate(0deg); }
+    79% { -moz-transform: rotate(0deg); }
+    80%, 85%, 90% { -moz-transform: rotate(-10deg); }
+    83%, 88%, 93% { -moz-transform: rotate(0deg); }
+    100% { -moz-transform: rotate(0deg); }
+}
+/* MS */
+@-ms-keyframes twitch {
+    0% { -ms-transform: rotate(95deg); }
+    9% { -ms-transform: rotate(95deg); }
+    10%, 12%, 14% { -ms-transform: rotate(98deg); }
+    11%, 13%, 15% { -ms-transform: rotate(95deg); }
+    100% { -ms-transform: rotate(95deg); }
+}
+@-ms-keyframes tail_flick {
+    0% { -ms-transform: rotate(0deg); }
+    79% { -ms-transform: rotate(0deg); }
+    80%, 85%, 90% { -ms-transform: rotate(-10deg); }
+    83%, 88%, 93% { -ms-transform: rotate(0deg); }
+    100% { -ms-transform: rotate(0deg); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
