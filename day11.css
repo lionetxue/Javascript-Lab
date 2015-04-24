@@ -97,7 +97,7 @@ h1 {
 
 #kitty_container {
     position: relative;
-    height: 600px;
+    height: 500px;
     width: 500px;
     margin: auto;
 }
@@ -273,7 +273,7 @@ h1 {
 
 .paw {
     position: absolute;
-    bottom: 120px;
+    bottom: 20px;
     height: 20px;
     width: 30px;
     background-color: #1a1a1a;
@@ -298,7 +298,7 @@ h1 {
 
 .tail {
     position: absolute;
-    bottom: 145px;
+    bottom: 45px;
     left: 100px;
     width: 140px;
     height: 110px;
