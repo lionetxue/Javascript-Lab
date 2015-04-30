@@ -1,0 +1,79 @@
+
+/* set both html and body height to 100% in order for click to work anywhere on screen */
+html{
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    overflow: scroll;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+#workspace {
+    padding-bottom: 18px;
+}
+h3 {
+    text-align: center;
+}
+.outer {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 2000px;
+    -ms-perspective: 2000px;
+    -moz-perspective: 2000px;
+    -o-perspective: 2000px;
+    perspective: 2000px;
+    position: relative;
+    perspective-origin: 50% 100px;
+}
+
+.cube {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    position: absolute;
+    width: 100px;
+}
+.cube div {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    outline: 2px solid lightgrey;
+    opacity: 0.8;
+    box-shadow: inset 0px 0px 50px #555;
+}
+
+.back {
+    transform: translateZ(-50px) rotateY(180deg);
+}
+.right {
+    transform: rotateY(-270deg) translateX(50px);
+    transform-origin: top right;
+}
+.left {
+    transform: rotateY(270deg) translateX(-50px);
+    transform-origin: center left;
+}
+.top {
+    transform: rotateX(-90deg) translateY(-50px);
+    transform-origin: top center;
+}
+.bottom {
+    transform: rotateX(90deg) translateY(50px);
+    transform-origin: bottom center;
+}
+.front {
+    transform: translateZ(50px);
+}
+
+/*Horizontal Spinning of the Cube */
+@keyframes spin {
+    from { transform: rotateY(0); }
+    to { transform: rotateY(360deg); }
+}
+
+.cube {
+    animation: spin 5s infinite linear;
+}
+
+
