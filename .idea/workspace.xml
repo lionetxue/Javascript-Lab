@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fb06e81-5ab5-4bc5-97ab-14e33d939b2c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/day15.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/day15.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/day15.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/day16.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/day16.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/day16.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day14.css" afterPath="$PROJECT_DIR$/day14.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/audio/Alarm-Buzzer.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/day17.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/day17.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/day17.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day16.html" afterPath="$PROJECT_DIR$/day16.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lab-index.html" afterPath="$PROJECT_DIR$/lab-index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -37,8 +38,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Html5" />
         <option value="CSS File" />
+        <option value="Html5" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -54,7 +55,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/day08.css" />
         <option value="$PROJECT_DIR$/day08.js" />
         <option value="$PROJECT_DIR$/day09.js" />
         <option value="$PROJECT_DIR$/day09.css" />
@@ -79,7 +79,6 @@
         <option value="$PROJECT_DIR$/day13.js" />
         <option value="$PROJECT_DIR$/jquery-1.2.6.min.js" />
         <option value="$PROJECT_DIR$/day13.css" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/../myWebsite/index.html" />
         <option value="$PROJECT_DIR$/day07.html" />
         <option value="$PROJECT_DIR$/day08.html" />
@@ -89,19 +88,24 @@
         <option value="$PROJECT_DIR$/day12.html" />
         <option value="$PROJECT_DIR$/day13.html" />
         <option value="$PROJECT_DIR$/test.css" />
-        <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/day14.html" />
         <option value="$PROJECT_DIR$/day14.js" />
         <option value="$PROJECT_DIR$/day14.css" />
         <option value="$PROJECT_DIR$/day15.html" />
         <option value="$PROJECT_DIR$/day15.js" />
-        <option value="$PROJECT_DIR$/lab-index.html" />
         <option value="$PROJECT_DIR$/day15.css" />
         <option value="$PROJECT_DIR$/jquery.ripples.js" />
         <option value="$PROJECT_DIR$/jquery.ripple.js" />
         <option value="$PROJECT_DIR$/day16.js" />
-        <option value="$PROJECT_DIR$/day16.html" />
         <option value="$PROJECT_DIR$/day16.css" />
+        <option value="$PROJECT_DIR$/day16.html" />
+        <option value="$PROJECT_DIR$/test.html" />
+        <option value="$PROJECT_DIR$/test.js" />
+        <option value="$PROJECT_DIR$/day17.css" />
+        <option value="$PROJECT_DIR$/lab-index.html" />
+        <option value="$PROJECT_DIR$/day17.html" />
+        <option value="$PROJECT_DIR$/day17.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -518,12 +522,12 @@
       <workItem from="1429548501334" duration="30051000" />
       <workItem from="1429666010447" duration="275000" />
       <workItem from="1429666298249" duration="14419000" />
-      <workItem from="1429906268182" duration="40026000" />
+      <workItem from="1429906268182" duration="48998000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111247000" />
+    <option name="totallyTimeSpent" value="120219000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="977" height="1176" extended-state="0" />
@@ -574,34 +578,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/day09.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39693192">
-          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day09.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.089166">
-          <caret line="179" column="38" selection-start-line="179" selection-start-column="38" selection-end-line="179" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jquery.localscroll-1.2.7-min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.76">
-          <caret line="8" column="1276" selection-start-line="8" selection-start-column="1276" selection-end-line="8" selection-end-column="1276" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jquery.scrollTo-1.4.2-min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.2">
-          <caret line="10" column="1927" selection-start-line="10" selection-start-column="1927" selection-end-line="10" selection-end-column="1927" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jquery.inview.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5043478">
@@ -749,14 +725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.069699906">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../myWebsite/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4831014">
@@ -895,14 +863,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day14.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5725646">
-          <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/day15.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.285576">
@@ -911,26 +871,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab-index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.90159047">
-          <caret line="58" column="7" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/day15.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5818006">
           <caret line="58" column="23" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day15.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53677934">
-          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -963,8 +907,86 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/day16.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5188867">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.30417496">
+          <caret line="17" column="8" selection-start-line="0" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day15.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6083499">
+          <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day14.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.333334">
+          <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.104549855">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#36#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7335984">
+          <caret line="169" column="0" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#0;n#div#1;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day17.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8954502">
+          <caret line="133" column="1" selection-start-line="133" selection-start-column="1" selection-end-line="133" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab-index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8787276">
+          <caret line="54" column="67" selection-start-line="54" selection-start-column="67" selection-end-line="54" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day17.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.071570575">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day17.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6795741">
+          <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#36#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.104549855">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
