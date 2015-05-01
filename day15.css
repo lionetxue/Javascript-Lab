@@ -1,0 +1,90 @@
+#simon {
+    padding-bottom: 38px;
+    text-align: center;
+}
+#modal {
+    position: absolute;
+    top: 80px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding:80px;
+    background-color: rgba(0,0,0,0.92);
+    color: #fff;
+    z-index: 100;
+    text-align:center;
+}
+h2{
+    padding:30px;
+    color:white;
+}
+
+#fail {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #BD000C;
+    z-index: 0;
+}
+
+button {
+    border: none;
+    height: 60px;
+    width: 200px;
+    margin-top: 50px;
+    font-size: 30px;
+    color: white;
+    background-color: #0F3FE8;
+}
+
+#level {
+    font-size: 24px;
+    padding: 20px 0 40px;
+}
+
+#game_wrap {
+    position: relative;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+}
+
+#game_container {
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    border-radius: 10%;
+    background: url('images/wood-box-top-view.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+
+#lightbox {
+    position: relative;
+    height: 450px;
+    width: 450px;
+    margin: 25px;
+    background: url('images/wood-panel.jpeg') no-repeat;
+}
+
+.bulb {
+    display: inline-block;
+    height: 120px;
+    width: 120px;
+    margin:10px;
+    border-radius: 50%;
+    background: #FFE8A6;
+    box-shadow: 0 0 20px rgba(255,223,113,0.7);
+    z-index: 10;
+}
+
+
+.glow {
+    box-shadow: 0 0 20px rgba(89,207,81,0.7);
+    background-color: #59CF51;
+}
+
+
+

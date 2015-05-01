@@ -1,0 +1,41 @@
+
+html {
+    height: 100%;
+}
+body {
+    color: #fff;
+    font-size: 16px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-image: url(images/Underwater_World.jpg);
+    background-size: cover;
+    background-position: 50% 0;
+    height: 100%;
+}
+
+body:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+
+.error {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    color: #f00;
+    padding: 5px;
+    max-width: 50%;
+}
+#control{
+    position:fixed;
+    top: 100px;
+}
+.disable {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
