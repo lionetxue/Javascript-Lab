@@ -103,6 +103,8 @@ $(document).ready(function(){
         //Now if the head of the snake bumps into its body, the game will restart
         if(nx == -1 || nx == w/cw || ny == -1 || ny == h/cw || check_collision(nx, ny, snake_array))
         {
+            //append score to game over message
+            $('#showscore').html("<p>Score: " + score + "</p>");
             // show game over message
             $('#gameover').show();
             //Lets organize the code a bit now.
@@ -176,4 +178,4 @@ $(document).ready(function(){
     })
 
 
-})
+});

@@ -81,7 +81,7 @@ $(document).ready(function () {
         drawParticles();
 
         requestAnimFrame(paintScreen);
-    };
+    }
 
     function Rocket(x, y) {
         this.x0 = w / 2;
@@ -93,7 +93,7 @@ $(document).ready(function () {
         this.v = 10;
         this.vx;
         this.vy;
-    };
+    }
 
     function checkRocket(rocket, i) {
         if (rocket.x_dif < 0) {
@@ -107,7 +107,7 @@ $(document).ready(function () {
                 rockets.splice(i, 1);
             }
         }
-    };
+    }
 
     function explodeRocket(x, y) {
         var color = 'hsl(' + randomInt(0, 360) + ', 100%, 65%)',
@@ -116,7 +116,7 @@ $(document).ready(function () {
             var size = Math.random()*1.8;
             particles.push(new Particle(x, y, color, size));
         }
-    };
+    }
 
     function Particle(x, y, color, size) {
         this.x = x;
@@ -128,7 +128,7 @@ $(document).ready(function () {
         this.time = 0;
         this.r = size,
             this.color = color;
-    };
+    }
 
     function drawParticles() {
         _.each(particles, function (part) {
@@ -140,7 +140,7 @@ $(document).ready(function () {
         });
 
         evolveParticles();
-    };
+    }
 
     function evolveParticles() {
         _.each(particles, function (part) {
@@ -156,7 +156,7 @@ $(document).ready(function () {
                 particles.splice(part, 1);
             }
         });
-    };
+    }
 
     function drawRockets() {
         _.each(rockets, function (rocket, i) {
@@ -176,7 +176,7 @@ $(document).ready(function () {
 
             checkRocket(rocket, i);
         });
-    };
+    }
 
 
     $('body').disableSelection();
@@ -185,7 +185,7 @@ $(document).ready(function () {
 
 function randomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
-};
+}
 
 
 
