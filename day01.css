@@ -14,7 +14,7 @@
 #top {
     display: block;
     position:fixed;
-    top: 320px;
+    top: 200px;
     height: 768px;
     width:768px;
     background-image:url("images/grand-opening.jpg");
