@@ -1,0 +1,97 @@
+#wrap {
+    position: relative;
+    width: 800px;
+    margin: auto;
+    padding-top: 80px; 
+    padding-bottom: 36px;
+    text-align: center;
+}
+
+h3 {
+    padding-top:50px;
+    line-height: 40px;
+}
+
+button {
+    height: 380px;
+    width: 380px;
+    margin-bottom: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.able {
+        background: url(images/EasyButton.png) no-repeat;
+}
+.disable {
+        background: url(images/EasyButton-after.png) no-repeat;
+}
+
+.progress_window {
+    display: none;
+    position: absolute;
+    width: 500px;
+    height: 60px;
+    top: 120px;
+    left: 150px;
+    padding: 30px 0;
+    background-color: #222;
+    border-radius: 8px;
+}
+
+.loading.text {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #07e8a8;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+}
+
+.bar_container {
+    height: 10px;
+    width: 400px;
+    margin: auto;
+    background-color: #333;
+    border-radius: 20px;
+    border: 7px solid rgba(0,0,0,0.9);
+}
+
+.inner_bar {
+    height: 6px;
+    width: 395px;
+    margin: 2px;
+    border-radius: 12px; 
+    background-color: #07e8a8;
+    box-shadow: 0 0 5px rgba(7, 232, 168, 0.7)
+}
+
+#text_bubble {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 200px;
+    height: 150px;
+    background: skyblue;
+    border-radius: 50%;
+    text-align: center;
+}
+#text_bubble:before {
+    content:"";
+    position: absolute;
+    right: 178px;
+    top: 128px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: skyblue;
+}
+#text_bubble:after{
+    content:"";
+    position: absolute;
+    right: 210px;
+    top: 160px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: skyblue;
+}
