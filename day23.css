@@ -1,0 +1,86 @@
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    padding: 5px;
+    font-size: 22px;
+    color: #ffa200;
+    cursor: pointer;
+}
+#wrap{
+    text-align: center;
+}
+#screen{
+    width: 400px;
+    height: 85px;
+    background-color:#222;
+    position: relative;
+    margin: auto;
+}
+#display {
+    width: 379px;
+    height: 65px;
+    margin: 9px;
+    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-size: 50px;
+    color: #2e2e36;
+    text-align: right;
+    background-color:#bccd95;
+    border: none;
+    border-top: 1px solid rgba(0,0,0,0.5);
+    border-left: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 1px 1px 3px 3px rgba(0,0,0,0.3) inset;
+}
+
+table {
+    padding: 10px;
+    width: 400px;
+    margin: auto;
+    border-spacing: 10px;
+    background-color: grey;
+}
+
+td {
+    background-color: lightgrey;
+    text-align: center;
+    font-size: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+    border:none;
+    border-radius:8px;
+    border-bottom:black 2px solid;
+    box-shadow: 1px 0px 0 rgba(0,0,0,0.05), 0px 1px 0 rgba(0,0,0,0.05),
+                2px 1px 0 rgba(0,0,0,0.05), 1px 2px 0 rgba(0,0,0,0.05);
+}
+
+.calc {
+    width: 70px;
+    height: 70px;
+}
+.num{
+    background-color: white;
+}
+.operator{
+    background-color: #5B6C9C;
+}
+#clear_all {
+    background-color: #D23838;
+}
+#clear_all:active {
+    background-color: #992828;
+}
+
+#equals {
+    background-color: #5B6C9C;
+}
+#equals:active {
+    background-color: #414E72;
+}
+
+.empty {
+    background-color: grey;
+    cursor: auto;
+    box-shadow:none;
+    border:none;
+}
