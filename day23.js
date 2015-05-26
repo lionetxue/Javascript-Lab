@@ -14,9 +14,7 @@ $(document).ready(function () {
 
 	$('#display').focus();
 
-	$('.close').on('click', function () {
-		$('#zero').hide();
-	});
+
 
 	$('.btn').on('click', function () { 
 		updateNum(this.id);

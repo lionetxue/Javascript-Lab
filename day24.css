@@ -1,0 +1,101 @@
+#title {
+    font-size: 40px;
+    font-weight: 900;
+    padding-top:100px;
+    letter-spacing: 2px; 
+}
+
+#form_wrap {
+    width: 600px;
+    margin: auto;
+}
+
+form {
+    position: absolute;
+    top: 300px;
+    width:600px;
+}
+
+#loc_input {
+    width: 300px;
+    padding: 5px;
+    font-size: 16px;
+    vertical-align: top;
+}
+
+#search {
+    height: 32px;
+    padding: 0 20px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    border-right: 2px solid rgba(255,255,255,0.5);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    font-weight: 300;
+    background-color: #cca851;
+    cursor:pointer;
+}
+
+#temp_wrap {
+    position: relative;
+    margin: auto;
+    height: 500px;
+    width: 250px;
+    z-index: -1;
+}
+
+#temp_container {
+    display: none;
+    position: absolute;
+    top: 180px;
+    height: 500px;
+    width: 250px;
+    text-align: center;
+    background-color: white;
+    border-radius: 5%;
+    border: 20px solid #cca851;
+}
+
+#location {
+    font-size: 16px;
+    padding: 15px 5px 5px;
+}
+#date {
+    font-size: 16px;
+    padding-top: 15px;
+}
+#temp {
+    font-size: 100px;
+    padding-top: 50px;
+}
+#max{
+    font-size: 16px;
+    font-weight: 300;
+    padding-top: 15px;
+}
+#desc {
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 0 40px;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+#chanceofrain{
+    font-size: 16px;
+    padding-top: 15px;
+}
+#uvIndex{
+    font-size: 16px;
+    font-weight: 300;
+    padding-top: 15px;
+}
+#windSpeed{
+    font-size: 16px;
+    font-weight: 300;
+    padding-top: 15px;
+}
+#reset{
+    margin-top:25px;
+}

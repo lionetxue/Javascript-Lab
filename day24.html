@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link href="LinXue-Lab.css" type="text/css" rel="stylesheet" />
+    <link href="day24.css" type="text/css" rel="stylesheet" />
+    <link rel="shortcut icon" href="images/NameLogo-red.ico">
+    <title>Lin Xue - Weather Today</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js" type="text/javascript"></script>
+    <script src="google-analytics.js" type="text/javascript"></script>
+    <script type="text/javascript" src="day24.js"></script>
+</head>
+<body>
+<header>
+    <div class="container">
+        <a href="http://linxuedesign.com"><img id="logo" src="images/NameLogo-red.png"/></a>
+        <div class="title">Day 24: Weather Today</div>
+        <nav class="mainnav">
+            <ul>
+                <li><a id="nav-lab" href="lab-index.html"> LAB </a></li>
+                <li><a id="nav-next" href="day24.html"> Next </a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="page-padding"></div>
+    <div id="title" class="container">What's the weather like today?</div>
+    <div id="form_wrap">
+      <form>
+        <input id="loc_input" type="text" placeholder="Search by zipcode or city name">
+        <input id="search" type="submit" value="Search">
+      </form>
+    </div>
+
+<div id='temp_wrap'>
+    <div id="temp_container">
+        <div id="location"></div>
+        <div id="date"></div>
+        <div id="temp"></div>
+        <div id="max"></div>
+        <div id="desc"></div>
+        <div id="chanceofrain"></div>
+        <div id="uvIndex"></div>
+        <div id="windSpeed"></div>
+        <button type="button" id="reset">Check Again?</button>
+    </div>
+</div>
+</body>
