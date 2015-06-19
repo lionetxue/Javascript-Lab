@@ -1,0 +1,39 @@
+body {
+    font: 10px sans-serif;
+}
+.year{
+    position: absolute;
+    top: 120px;
+    left:50%;
+    margin-left:-60px;
+}
+
+.chart {
+    background: #fff;
+}
+
+.table {
+    position: absolute;
+    top: 110px;
+    left: 10px;
+    right:10px;
+    visibility: hidden;
+}
+
+p {
+    font: 20px helvetica;
+}
+
+
+.axis path, .axis line {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2px;
+    shape-rendering: crispEdges;
+}
+
+form {
+    position: absolute;
+    top: 90px;
+    right:50px;
+}
