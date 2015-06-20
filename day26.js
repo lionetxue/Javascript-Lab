@@ -7,16 +7,15 @@
 chart("sightings_2015.csv", "blue");
 
 var datearray = [];
-var colorrange = [];
 
 function chart(csvpath, color) {
     if (color == "blue") {
-        colorrange = ["#023858","#045a8d", "#0570b0", "#3690c0", "#74a9cf", "#a6bddb", "#d0d1e6", "#ece7f2", "#fff7fb",
+        var colorrange = ["#023858","#045a8d", "#0570b0", "#3690c0", "#74a9cf", "#a6bddb", "#d0d1e6", "#ece7f2", "#fff7fb",
         "#f7fcfd","#e5f5f9","#ccece6","#99d8c9","#66c2a4","#41ae76","#238b45","#006d2c","#00441b"];
     }
     var strokecolor = colorrange[0];
 
-    var margin = {top: 20, right: 50, bottom: 30, left: 50};
+    var margin = {top: 30, right: 50, bottom: 30, left: 50};
         var width = document.body.clientWidth - margin.left - margin.right;
         var height = 600 - margin.top - margin.bottom;
 
@@ -26,28 +25,27 @@ function chart(csvpath, color) {
         .style("position", "absolute")
         .style("z-index", "20")
         .style("visibility", "hidden")
-        .style("top", "100px")
-        .style("left", "55px");
+        .style("top", "90px")
+        .style("left", "75px");
 
     var x = d3.time.scale()
         .range([0, width]);
 
     var y = d3.scale.linear()
-        .range([height-10, 0]);
+        .range([height, 0]);
 
     var z = d3.scale.ordinal()
         .range(colorrange);
 
     var xAxis = d3.svg.axis()
         .scale(x)
-        .orient("bottom")
-        .ticks(d3.time.week);
+        .orient("bottom");
 
     var yAxis = d3.svg.axis()
         .scale(y);
 
     var stack = d3.layout.stack()
-        .offset("silhouette")
+        .offset("zero")
         .values(function(d) { return d.values; })
         .x(function(d) { return d.date; })
         .y(function(d) { return d.value; });
@@ -98,7 +96,13 @@ function chart(csvpath, color) {
 
         svg.append("g")
             .attr("class", "y axis")
-            .call(yAxis.orient("left"));
+            .call(yAxis.orient("left"))
+            .append("text")
+            .attr("transform", "rotate(-90)")
+            .attr("y", 6)
+            .attr("dy", ".71em")
+            .style("text-anchor", "end")
+            .text("Birds Counted");
 
         svg.selectAll(".layer")
             .attr("opacity", 1)
@@ -116,7 +120,7 @@ function chart(csvpath, color) {
                 invertedx = invertedx.getMonth() + invertedx.getDate();
                 var selected = (d.values);
                 for (var k = 0; k < selected.length; k++) {
-                    datearray[k] = selected[k].date
+                    datearray[k] = selected[k].date;
                     datearray[k] = datearray[k].getMonth() + datearray[k].getDate();
                 }
 
